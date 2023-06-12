@@ -1,0 +1,73 @@
+.primary-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+
+/* -----------shift contact to right corner -------------------- */
+
+
+.cart-Icon {
+  margin-left: 35px;
+  color:red;
+  font-size: 24px;
+
+
+
+}
+
+.log-in {
+    margin-left: auto;
+    color: #151617;
+    font-size: 24px;
+  }
+
+
+  /* ---------working on footer component--------------- */
+
+  
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\\\\//\/\/\\//\\/\/\/\/\//\\\\\\\\\\\\\\
+*/
+/* 
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .featured-section {
+    display: fels;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+
+  
