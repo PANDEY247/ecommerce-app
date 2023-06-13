@@ -1,8 +1,9 @@
+import Slider from "./Slider/Slider";
+
 const Home=()=> {
   return (
-    <div className="greet">
-    Welcome to Our Store 
-      
+    <div className="home">
+<Slider/>      
     </div>
   )
 }

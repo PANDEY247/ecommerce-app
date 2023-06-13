@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 const Navbar = () => {
   return (
     <nav className="primary-nav">
@@ -17,13 +17,19 @@ const Navbar = () => {
         Categories
       </Link> */}
       <Link to="/profile" className="nav-link">
-        Get in touch!
+        Profile
       </Link>
       <Link to="/contact" className="log-in">
-      <PersonOutlineIcon/>
+        <PersonOutlineIcon />
       </Link>
       <Link to="/cart" className="cart-Icon">
-      <ShoppingBagIcon />
+        <ShoppingBagIcon />
+      </Link>
+      <Link to="/login" className="nav-link">
+        Login
+      </Link>
+      <Link to="/protected" className="nav-link">
+        
       </Link>
 
     </nav>

@@ -1,10 +1,14 @@
-// import {useEffect,useState} from "react";
+import {useEffect,useState} from "react";
 const ProductListingPage = () => {
-  const productList = [
-    { id: 1, name: 'Product 1', price: 10 },
-    { id: 2, name: 'Product 2', price: 20 },
-    { id: 3, name: 'Product 3', price: 30 },
-  ];
+  const [productList, setProductList] = useState([]);
+
+  useEffect(() => {
+    // Fetch the product data from an API
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => setProductList(data))
+      .catch((error) => console.log(error));
+  }, []);
 
 
   return (

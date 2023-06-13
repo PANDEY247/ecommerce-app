@@ -1,8 +1,19 @@
+html, body{
+  height:100%;
+  /* overflow: ; */
+}
+
 .primary-nav {
     display: flex;
     justify-content: space-between;
     background-color: #f0f0f0;
     padding: 10px;
+
+    @media screen and (max-width: 768px) {
+      /* Styles for smaller screens */
+      flex-direction: column;
+      align-items:flex-start;
+    }
   }
   
   .nav-link {
@@ -14,6 +25,14 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    /* For example, add margin-bottom to create vertical spacing between links */
+    margin: 5px 0;
+    text-align: center;
+  }
+
   }
   
   .nav-link:hover {
@@ -28,10 +47,23 @@
   margin-left: 35px;
   color:red;
   font-size: 24px;
+  position: relative;
+  transition: transform 0.3s;
 
+  @media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    margin-left: 10px;
+    font-size: 20px;
+    transform-origin: center;
+    /* For example, adjust the size or alignment of the icons */
+  }
 
+  &:hover {
+    transform: scale(1.2);
+  }
 
 }
+
 
 .log-in {
     margin-left: auto;
@@ -41,8 +73,81 @@
 
 
   /* ---------working on footer component--------------- */
+  .Footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .left .Logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .right {
+    /* Add any additional styles for the right section of the footer */
+  }
+
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(100%); /* Initially hide the footer by moving it off-screen */
+  }
+  
+  body.scrollTop-zero .footer {
+    transform: translateY(0);
+  }
+  
+
+  /* root element */
 
   
+  
+  /* Rest of the styles remain the same */
+  
+  
+
+  
+  
+
+  
+  
+
+
+
 
 
 /*/\/\/\/\/\/\/\/\/\/\/\\\\//\/\/\\//\\/\/\/\/\//\\\\\\\\\\\\\\

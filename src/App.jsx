@@ -1,4 +1,4 @@
-import Layout from './Component/Layout/Layout';
+import Layout from "./Component/Layout/Layout";
 import Home from "./Component/Home";
 import Navbar from "./Component/Navbar";
 import { Routes, Route } from "react-router-dom";
@@ -11,14 +11,19 @@ import Cart from "./Component/Cart/Cart";
 // import NewProduct from "./Component/Product/NewProduct";
 import Profile from "./Component/Profile";
 import Contact from "./Component/Contact";
+import { Login } from "./Component/Login";
+import Protected from "./Component/Protected/Protected";
 const App = () => {
   return (
-    <>
     <Layout>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/productListingPage" element={<ProductListingPage />} />
+        <Route path="/" element={<Protected Component={Home} />} />
+
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/productListingPage" element={<ProductListingPage />} /> */}
+        <Route path="/productListingPage" element={<Protected Component={ProductListingPage} />}/>
+
         <Route path="/productDetailsPage" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<Cart />} />
         {/* <Route path="categories" element={<Categories />}>
@@ -28,9 +33,7 @@ const App = () => {
         <Route path="profile" element={<Profile />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-      </Layout>
-    </>
-    
+    </Layout>
   );
 };
 export default App;
