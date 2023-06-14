@@ -6,7 +6,7 @@ import "./App.css";
 import ProductListingPage from "./Component/Product/ProductListingPage";
 import ProductDetailsPage from "./Component/Product/ProductDetailsPage";
 import Cart from "./Component/Cart/Cart";
-// import Categories from "./Component/Product/Categories";
+import Categories from "./Component/Product/Categories";
 // import FeaturedProduct from "./Component/Product/FeaturedProduct";
 // import NewProduct from "./Component/Product/NewProduct";
 import Profile from "./Component/Profile";
@@ -26,10 +26,10 @@ const App = () => {
 
         <Route path="/productDetailsPage" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<Cart />} />
-        {/* <Route path="categories" element={<Categories />}>
-          <Route path="featured" element={<FeaturedProduct />} />
-          <Route path="new" element={<NewProduct />} />
-        </Route> */}
+        <Route path="categories" element={<Categories />}>
+          {/* <Route path="featured" element={<FeaturedProduct />} /> */}
+          {/* <Route path="new" element={<NewProduct />} /> */}
+        </Route>
         <Route path="profile" element={<Profile />} />
         <Route path="contact" element={<Contact />} />
       </Routes>

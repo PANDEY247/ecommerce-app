@@ -7,7 +7,7 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const data = [
-    'https://img.freepik.com/free-photo/modern-men-fashion-retail-boutique-store-generated-by-ai_188544-43480.jpg?w=1060&t=st=1686651417~exp=1686652017~hmac=a356d8d2b617cc80e390ba0d9ad7c1a9d66e86943a904a3a648fc93481bc032b',
+    'https://img.freepik.com/free-photo/smile-corporate-skyscraper-teeth-bare_1134-1439.jpg?w=1380&t=st=1686734014~exp=1686734614~hmac=c02bc1fa54ce07e92536b87e1c921b1bb55712955ec37e94f7d5c88ecfc202a7',
     'https://img.freepik.com/free-photo/cute-child-sunglasses-enjoys-summer-fun-indoors-generated-by-ai_188544-42184.jpg?w=1060&t=st=1686652199~exp=1686652799~hmac=bf59e970717a88e79ee55d85994501ebeb0ef4132f4be4a52a0cf8ffa81fa8e8',
     "https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448751.jpg?w=996&t=st=1686659623~exp=1686660223~hmac=71f62d9bbf497ad060bf89d0049f3785385bdb2c68a0fe6f4fd09645224232ef"
   ];

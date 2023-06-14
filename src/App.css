@@ -1,27 +1,22 @@
-html, body{
-  height:100%;
-  /* overflow: ; */
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+
+  @media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.primary-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 10px;
-
-    @media screen and (max-width: 768px) {
-      /* Styles for smaller screens */
-      flex-direction: column;
-      align-items:flex-start;
-    }
-  }
-  
-  .nav-link {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
@@ -32,20 +27,15 @@ html, body{
     margin: 5px 0;
     text-align: center;
   }
+}
 
-  }
-  
-  .nav-link:hover {
-    color: #000;
-  }
-  
-
-/* -----------shift contact to right corner -------------------- */
-
+.nav-link:hover {
+  color: #000;
+}
 
 .cart-Icon {
   margin-left: 35px;
-  color:red;
+  color: red;
   font-size: 24px;
   position: relative;
   transition: transform 0.3s;
@@ -61,118 +51,71 @@ html, body{
   &:hover {
     transform: scale(1.2);
   }
-
 }
 
-
 .log-in {
-    margin-left: auto;
-    color: #151617;
-    font-size: 24px;
-  }
+  margin-left: auto;
+  color: #151617;
+  font-size: 24px;
+}
 
+.Footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
-  /* ---------working on footer component--------------- */
-  .Footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-  
-  .top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .item {
-    flex: 1 1 30%;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  span {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .left .Logo {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .right {
-    /* Add any additional styles for the right section of the footer */
-  }
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.item {
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+}
 
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    transform: translateY(100%); /* Initially hide the footer by moving it off-screen */
-  }
-  
-  body.scrollTop-zero .footer {
-    transform: translateY(0);
-  }
-  
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
-  /* root element */
+span {
+  display: block;
+  margin-bottom: 5px;
+}
 
-  
-  
-  /* Rest of the styles remain the same */
-  
-  
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  
-  
+.left .Logo {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  
-  
+.right {
+  /* Add any additional styles for the right section of the footer */
+}
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateY(100%); /* Initially hide the footer by moving it off-screen */
+}
 
+body.scrollTop-zero .footer {
+  transform: translateY(0);
+}
 
+/* Rest of the styles remain the same */
 
-
-/*/\/\/\/\/\/\/\/\/\/\/\\\\//\/\/\\//\\/\/\/\/\//\\\\\\\\\\\\\\
-*/
-/* 
-.categories-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .search-bar {
-    margin-bottom: 20px;
-    width: 300px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-  
-  .featured-section {
-    display: fels;
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
-
-  
+/* Categories container styles and featured section styles are commented out */
