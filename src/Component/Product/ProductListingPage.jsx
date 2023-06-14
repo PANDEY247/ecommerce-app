@@ -1,6 +1,8 @@
 import { FeaturedProduct } from "./FeaturedProduct";
 export const ProductListingPage = () => {
   return (
+    <>
+    
     <div className="products">
       <div className="left">
         <div className="filterItem">
@@ -61,6 +63,7 @@ export const ProductListingPage = () => {
       </div> */}
       <FeaturedProduct/>
     </div>
+    </>
   );
 };
 
